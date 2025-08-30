@@ -1,0 +1,58 @@
+.links-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.links-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+}
+
+.links-section h3 {
+  color: rgba(30, 108, 147, 1);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  border-bottom: 2px solid rgba(30, 108, 147, 0.2);
+  padding-bottom: 0.5rem;
+}
+
+.links-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.links-section li {
+  margin-bottom: 0.75rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.links-section li:before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: rgba(30, 108, 147, 1);
+  font-weight: bold;
+}
+
+.links-section a {
+  color: rgba(30, 108, 147, 1);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.links-section a:hover {
+  color: rgba(30, 108, 147, 0.7);
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .links-section {
+    padding: 1.5rem;
+  }
+}
